@@ -1,0 +1,61 @@
+    .container {
+        
+        
+        }
+     .inner-container{
+        background-color: #283a61;
+    }
+
+
+    ul{
+    
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    
+    
+
+ 
+
+}
+
+
+    li {
+        list-style: none;
+        
+        
+        
+
+    }
+
+    li a {
+        text-decoration:   none;
+        color: white;
+    }
+
+
+    li a:hover {
+        color:aqua
+        
+    }
+
+
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }

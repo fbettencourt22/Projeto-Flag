@@ -1,7 +1,7 @@
 .header{
     width: 100%;
     cursor: pointer;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
