@@ -3,22 +3,22 @@ import { Header } from "./components/Header/Header";
 import { Watchlist } from "./components/Watchlist/Watchlist";
 import { Watched } from "./components/Watched/Watched";
 import { Add } from "./components/Add/Add";
-import Nav from "./components/Nav Bar/Nav";
+//import { Nav } from "./components/Nav Bar/Nav";
+import "./App.css";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Nav />
 
       <Switch>
         <Route exact path="/">
           <Watchlist />
         </Route>
-        <Route exact path="/watched">
+        <Route path="/watched">
           <Watched />
         </Route>
-        <Route exact path="/add">
+        <Route path="/add">
           <Add />
         </Route>
       </Switch>
