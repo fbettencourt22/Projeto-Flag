@@ -17,7 +17,7 @@ export const Add = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data.errors) {
+        if (data) {
           setResults(data.results);
         } else {
           setResults([]);
@@ -37,7 +37,8 @@ export const Add = () => {
               onChange={onChange}
             />
           </div>
-          {results.length > 0 && (
+
+          {results && results.length > 0 && (
             <ul className="results">
               {results.map((movie) => (
                 <li key={movie.id}>
