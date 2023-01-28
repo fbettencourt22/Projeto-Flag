@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
 import "./Cards.css";
 
 export const Cards = ({ movie }) => {
+  const { addMovieToWatchlist, addMovieToWatched, watchlist, watched } =
+    useContext(GlobalContext);
+
+  let storedMovie = watchlist.find((e) => e.id === movie.id);
+
+  const watchlistDisable = storedMovie ? true : false;
+
   function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
@@ -31,7 +39,13 @@ export const Cards = ({ movie }) => {
           </h4>
         </div>
         <div className="controls">
-          <button className="btn">Add to Watchlist</button>
+          <button
+            className="btn"
+            disabled={watchlistDisable}
+            onClick={() => addMovieToWatchlist(movie)}
+          >
+            Add to Watchlist
+          </button>
         </div>
       </div>
     </div>

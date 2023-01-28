@@ -5,9 +5,11 @@
 }
 
 .title {
-	font-size: 1.5rem;
-	font-weight: 800;
-	padding-bottom: 0.3rem;
+	
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--primary);
 }
 
 .discription {
@@ -16,13 +18,28 @@
 	padding-top: 0.5rem;
 	font-size: 0.8rem;
 	max-width: 360px;
+    color: var(--primary);
 	
 }
 
 .release-date{
-
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--primary);
+    margin: 0;
    
 
 }
+
+
+
+.btn:hover {
+    background-color: #1a84a7;
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.08);
+    opacity: 1;
+    color: aqua;
+  }
 
 
