@@ -1,7 +1,8 @@
 :root {
-    --primary:#283a61;
-    --secondary: #21d07a;
+    --primary:#ffffff;
+    --secondary: #21bcd0;
     --white: #fff;
+    background-color: #283a61;
   }
 
   body {
