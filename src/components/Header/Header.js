@@ -5,7 +5,7 @@ import "./Header.css";
 export const Header = () => {
   return (
     <div>
-      <span className="header">Movi List</span>
+      <span className="header">Movie List</span>
       <div className="container">
         <div className="inner-container">
           <ul>
