@@ -10,7 +10,10 @@ export const Header = () => {
         <div className="inner-container">
           <ul>
             <li>
-              <Link to="/">Watch List</Link>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/watchlist">Watch List</Link>
             </li>
             <li>
               <Link to="/watched">Watched</Link>
