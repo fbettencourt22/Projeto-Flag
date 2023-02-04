@@ -3,8 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 import "./Cards.css";
 
 export const Cards = ({ movie }) => {
-  const { addMovieToWatchlist, addMovieToWatched, watchlist, watched } =
-    useContext(GlobalContext);
+  const { addMovieToWatchlist, watchlist } = useContext(GlobalContext);
 
   let storedMovie = watchlist.find((e) => e.id === movie.id);
 
@@ -15,8 +14,8 @@ export const Cards = ({ movie }) => {
   }
 
   return (
-    <div className="result-card">
-      <div className="poster-wrapper">
+    <div className="result_card">
+      <div className="poster_wrapper">
         {movie.poster_path ? (
           <img
             src={`https:/image.tmdb.org/t/p/w200${movie.poster_path}`}
@@ -40,7 +39,7 @@ export const Cards = ({ movie }) => {
         </div>
         <div className="controls">
           <button
-            className="btn"
+            className="btn_cntrl"
             disabled={watchlistDisable}
             onClick={() => addMovieToWatchlist(movie)}
           >

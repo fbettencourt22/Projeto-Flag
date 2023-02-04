@@ -1,3 +1,29 @@
-watchlist{
-    background-color: #283a61;
+
+
+.heading{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
 }
+
+
+
+
+.movie_grid{
+
+    display: flex;
+    padding: 30px;
+    align-items: center;
+ 
+}
+
+.no_movies{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    opacity: 10;
+}
+

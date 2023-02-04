@@ -1,0 +1,13 @@
+.movie_card{
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(1, 52, 107);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.poster_card{
+    padding-bottom: 15px;
+}

@@ -17,6 +17,7 @@
 .results {
   flex-direction: column;
   align-items: flex-start;
+  list-style: none;
 
  
 }
@@ -34,9 +35,3 @@
 	opacity: 1;
 }
 
-.result-card{
-  display: flex;
-  justify-content: space-between;
- 
- 
-}

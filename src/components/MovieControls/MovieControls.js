@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faXmark } from "@fortawesome/free-solid-svg-icons";
+import "./MovieControl.css";
 
 export const MovieControls = ({ movie, type }) => {
   const {
@@ -12,11 +13,16 @@ export const MovieControls = ({ movie, type }) => {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="inner_card_controls">
-      {type == "watchlist" && (
+    <div className="controls">
+      {type === "watchlist" && (
         <>
-          <button className="ctrl_btn" onClick={() => addMovieToWatched(movie)}>
-            <FontAwesomeIcon icon={faArrowRight} />
+          <button
+            className="ctrl_btn"
+            onClick={() => addMovieToWatched(movie)}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            {hover ? <FontAwesomeIcon icon={faArrowRight} /> : "Watched"}
           </button>
 
           <button
@@ -30,7 +36,7 @@ export const MovieControls = ({ movie, type }) => {
         </>
       )}
 
-      {type == "watched" && (
+      {type === "watched" && (
         <>
           <button
             className="ctrl_btn"

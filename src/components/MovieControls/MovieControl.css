@@ -1,0 +1,23 @@
+.ctrl_btn{
+
+display: inline-block;
+width: 120px;
+color: #fff;
+outline: none;
+border: none;
+font-weight: 700;
+border-radius: 0.2vw;
+padding: 0.5rem 1rem;
+margin-right: 1rem;
+background-color: rgba(51, 51, 51, 0.5);}
+
+.ctrl_btn:hover {
+	color: #000;
+	background-color: #e6e6e6;
+	transition: all 0.2s;
+    cursor: pointer;
+
+}
+
+
+

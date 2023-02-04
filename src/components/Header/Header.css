@@ -1,55 +1,63 @@
-.header{
-    width: 100%;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-size: 5vw;
-    padding-bottom: 15px;
-    box-shadow: 0px 1px 5px rgb(0, 0, 0);
-    color: white;
-    z-index: 100;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+
+
+
+.site_header{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 20px rgb(1, 52, 107);
+  
 }
 
-.container {
-        
-        
-}
-.inner-container{
-
-
-}
-
-ul{
-
-justify-content: space-between;
-display: flex;
-align-items: center;
-text-transform: uppercase;
+.logo{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 15px;  
+  font-weight: 700;
+  font-family: 'Rowdies', cursive;
 
 
 }
-
-
-li {
-list-style: none;
-
-}
-
-li a {
-text-decoration:   none;
-color: white;
+.navbar{
+  display:flex ;
+  align-items: center;
+  gap: 30px;
 }
 
 
-li a:hover {
-color:aqua
+.navbar_links{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  list-style: none;
+  justify-content: flex-end;
 
 }
 
-.btn {
+.navbar_links a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar_links a:hover {
+  
+color:rgb(18, 64, 151);
+
+}
+
+
+
+
+.btn, .btn_cntrl {
     padding: 10px 15px;
     background-color: var(--secondary);
     color: var(--primary);
@@ -57,29 +65,24 @@ color:aqua
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    border: none;
     font-size: 1rem;
     transition: all 0.3s ease;
     line-height: 1.1;
+    margin-right: 30px;
+    text-decoration: none;
   }
   
-  .btn:hover {
+  .btn:hover, .btn_cntrl:hover {
     background-color: #1a84a7;
     opacity: 1;
     cursor: pointer;
     transform: scale(1.08);
-    opacity: 1;
+   
     
   }
   
-  .btn:disabled {
+  .btn:disabled, .btn_cntrl:disabled {
     pointer-events: none;
     opacity: 0.5;
   }
 
-@media (max-width: 1000px) {
-    .header{
-        padding-top: 15px;
-        font-size: 6.4vw;
-    }
-}

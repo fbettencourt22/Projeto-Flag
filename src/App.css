@@ -4,7 +4,7 @@
     --primary:#ffffff;
     --secondary: #21bcd0;
     --white: #fff;
-    background-color: #283a61;
+    background:linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%)
   }
 
   body {

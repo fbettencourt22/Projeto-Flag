@@ -4,27 +4,23 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <div>
-      <span className="header">Movie List</span>
-      <div className="container">
-        <div className="inner-container">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/watchlist">Watch List</Link>
-            </li>
-            <li>
-              <Link to="/watched">Watched</Link>
-            </li>
-            <li>
-              <Link to="/add" className="btn">
-                + Add
-              </Link>
-            </li>
-          </ul>
-        </div>
+    <div className="site_header">
+      <Link className="logo" to="/">
+        Movie List
+      </Link>
+      <div className="navbar">
+        <ul className="navbar_links">
+          <li>
+            <Link to="/watchlist">Watch List</Link>
+          </li>
+          <li>
+            <Link to="/watched">My List</Link>
+          </li>
+        </ul>
+
+        <Link to="/add" className="btn">
+          + Add
+        </Link>
       </div>
     </div>
   );
